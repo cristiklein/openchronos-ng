@@ -92,6 +92,9 @@ config:
 install: openchronos.txt
 	contrib/ChronosTool.py rfbsl $<
 
+install-usb: openchronos.elf
+	mspdebug rf2500 "prog openchronos.elf"
+
 clean: $(SUBDIRS)
 	@for subdir in $(SUBDIRS); do \
 		echo "Cleaning $$subdir .."; rm -f $$subdir/*.o; \
