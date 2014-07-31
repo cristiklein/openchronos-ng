@@ -7,7 +7,7 @@ Please check our homepage for the most up to date information.
 In openchronos-ng, the watch no longer boots directly into the
 main menu anymore. When the watch is reset (or you put the battery
 for the first time), you have the choice to either enter flash mode
-(press # button) or continue into main menu (press any other button).
+(press backlight button) or continue into main menu (press any other button).
 
 == Recommended Toolchain ==
 
