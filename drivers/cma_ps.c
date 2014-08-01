@@ -74,6 +74,7 @@ void cma_ps_init(void)
 
     // Reset pressure sensor -> powerdown sensor
     success = cma_ps_write_register(0x06, 0x01);
+    (success); // Suppress compiler warning
 
     // 100msec delay
     timer0_delay_callback(100, cma_finish_init);
